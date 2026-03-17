@@ -1,0 +1,75 @@
+/* variables */
+:root {
+    --text-color: rgb(255, 255, 255);
+    --sombras: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Abhaya Libre ExtraBold";
+}
+
+/* clases */
+.r-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.top-nav {
+    width: 100%;
+}
+
+
+.header_bg {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-image:
+    linear-gradient(rgba(3, 3, 3, 0.19), rgba(3, 3, 3, 0.19)),
+    linear-gradient(
+      180deg,
+      rgba(77, 231, 234, 0.3) 0%,
+      rgba(8, 110, 111, 0.5) 100%
+    ),
+    url("/assets/media/header.png");
+  background-size: cover;
+  height: 660px;
+  position: relative;
+}
+
+.top-nav {
+  width: 100%;
+}
+
+.text-shadow {
+    color: var(--text-color);
+    text-shadow: var(--sombras);
+    font-size: large;
+}
+
+.cuadro_header {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo_header {
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-shadow: var(--sombras);
+}
+
+.titulo_header h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.titulo_header h3 {
+    font-size: 30px;
+}
